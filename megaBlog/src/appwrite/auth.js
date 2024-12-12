@@ -6,14 +6,14 @@ export class AuthServices {
     // Create a client
     client = new Client();
     // Create a account using client
-    account;
+    account;  
 
     constructor(){
         this.client
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
 
-        account = new Account(this.client);
+        this.account = new Account(this.client);
     }
 
     async createAccount({email, password, name}){
