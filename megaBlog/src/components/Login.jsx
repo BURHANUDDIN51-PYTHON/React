@@ -79,7 +79,8 @@ function Login() {
                     <Button
                         children={'Sign In'}
                         type='submit'
-                        className='w-full'/>
+                        className='w-full'
+                    />
                 </div>
             </form>
         </div>
